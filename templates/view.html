@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1> File Upload Successful</h1>
+	{{ answer }}<br>
+	
+
+	<table border=2 cellpadding="2" cellspacing="2">
+		<thead>
+			<td>File Name</td>
+			<td>Text Extracted</td>
+			<td>Time In</td>
+		</thead>
+
+		{% for row in rows %}
+			<tr>
+				<td>{{row['fileName']}}</td>
+				<td>{{row['textExtracted']}}</td>
+				<td>{{row['timeIn']}}</td>
+			</tr>
+		{% endfor %}
+
+	</table>
+</body>
+</html>

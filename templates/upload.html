@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<h1> Upload Platenumber</h1>
+
+	<form id="upload-form" action="{{ url_for('upload')}}" method="POST" enctype="multipart/form-data">
+	<input type="file" name="file" accept="image/*" multiple="">
+	<input type="submit" value="Extract">
+		
+	<a href="/list">view database</a>	
+	</form>
+
+</body>
+</html>
